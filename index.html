@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Matheus Rodrigues de Souza - Portfólio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Certifique-se que o caminho para o seu CSS está correto -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Ou o nome do seu arquivo CSS -->
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Matheus Rodrigues de Souza - Portfólio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
 <body>
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <!-- Logo com o ponto tech -->
             <a href="#" class="logo">MR<span class="tech-dot"></span></a>
             <button class="mobile-nav-toggle" id="mobile-nav-toggle">
                 <i class="fas fa-bars"></i>
@@ -29,13 +28,10 @@
     <section class="hero" id="sobre">
         <div class="hero-container">
             <div class="profile-image-container">
-                <!-- Substitua pelo caminho da sua foto -->
                 <img src="images/profile.jpg" alt="Matheus Rodrigues de Souza" class="profile-image">
-                <!-- Círculo tech decorativo -->
                 <div class="tech-circle"></div>
             </div>
             <div class="hero-content">
-                <!-- Badge tech adicionado ao título -->
                 <h1>Matheus Rodrigues de Souza <span class="tech-badge">Estatística & Análise de Dados</span></h1>
                 <p class="subtitle">
                     <span><i class="fas fa-chart-bar"></i> Estatística</span>
@@ -45,21 +41,23 @@
                     <span><i class="fas fa-database"></i> SQL</span>
                     <span><i class="fas fa-brain"></i> Machine Learning</span>
                 </p>
-                <p>Estudante de Estatística apaixonado por dados e pela geração de insights. Busco continuamente aprimorar meus conhecimentos em Ciência de Dados, Business Intelligence e Estatística para extrair informações valiosas que auxiliem na tomada de decisões estratégicas. Acredito no autodesenvolvimento através de estudos, leitura e experiências profissionais, e sou motivado a colaborar com equipes que valorizam a análise de dados para impulsionar crescimento e inovação.</p>
+                <p>Estudante de Estatística apaixonado por dados e pela geração de insights.
+                    Busco continuamente aprimorar meus conhecimentos em Ciência de Dados,
+                    Business Intelligence e Estatística para extrair informações valiosas que auxiliem na tomada de decisões estratégicas.
+                    Acredito no autodesenvolvimento através de estudos, leitura e experiências profissionais, e sou motivado a colaborar com equipes que valorizam
+                    a análise de dados para impulsionar crescimento e inovação.
+                </p>
                 <a href="#contato" class="btn"><i class="fas fa-paper-plane"></i> Entre em Contato</a>
             </div>
         </div>
     </section>
 
     <section class="skills section-container" id="habilidades">
-        <!-- Decoração tech adicionada -->
         <div class="tech-decoration"></div>
         <div class="skills-container">
-            <!-- Brackets tech adicionados ao título -->
             <h2 class="section-title">Habilidades <span class="tech-bracket"></></span></h2>
             <p class="section-subtitle">Competências e ferramentas que utilizo para transformar dados em valor</p>
             <div class="skills-grid">
-                <!-- Ícones agora dentro de .card-header -->
                 <div class="skill-card fade-in">
                     <div class="card-header">
                         <i class="fas fa-chart-pie"></i>
@@ -107,14 +105,11 @@
     </section>
 
     <section class="projects section-container" id="experiencia"> <!-- ID mantido como experiencia -->
-        <!-- Decoração tech adicionada (rotacionada) -->
         <div class="tech-decoration right"></div>
         <div class="skills-container">
-            <!-- Brackets tech adicionados ao título -->
             <h2 class="section-title">Experiência <span class="tech-bracket">{...}</span></h2>
             <p class="section-subtitle">Minha trajetória profissional e acadêmica na área de dados</p>
             <div class="skills-grid">
-                 <!-- Ícones agora dentro de .card-header -->
                  <div class="skill-card fade-in">
                     <div class="card-header">
                          <i class="fas fa-graduation-cap"></i>
@@ -188,21 +183,17 @@
                 <a href="mailto:eliadezoe@gmail.com"><i class="fas fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/matheus-rodrigues-estatistico/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="tel:+5562994030113"><i class="fas fa-phone"></i></a>
-                <!-- <a href="https://github.com/seu-usuario" target="_blank"><i class="fab fa-github"></i></a> -->
             </div>
         </div>
     </footer>
 
-    <!-- O script JS existente deve continuar funcionando -->
    <script>
-       // Mobile Navigation Toggle
        const mobileNavToggle = document.getElementById('mobile-nav-toggle');
        const navLinks = document.getElementById('nav-links');
 
        mobileNavToggle.addEventListener('click', () => {
            navLinks.classList.toggle('active');
 
-           // Toggle icon between bars and X
            const icon = mobileNavToggle.querySelector('i');
            if (icon.classList.contains('fa-bars')) {
                icon.classList.remove('fa-bars');
@@ -213,7 +204,6 @@
            }
        });
 
-       // Close mobile nav when clicking a link
        const navLinkElements = document.querySelectorAll('.nav-links a');
        navLinkElements.forEach(link => {
            link.addEventListener('click', () => {
@@ -226,7 +216,6 @@
            });
        });
 
-       // Navbar scroll effect
        const navbar = document.getElementById('navbar');
        window.addEventListener('scroll', () => {
            if (window.scrollY > 50) {
@@ -236,28 +225,21 @@
            }
        });
 
-       // Reveal animations on scroll
        const fadeElements = document.querySelectorAll('.fade-in');
 
        function checkFade() {
            fadeElements.forEach(element => {
                const elementTop = element.getBoundingClientRect().top;
-               // Adjust visibility threshold if needed
-               const elementVisible = 100; // Element needs to be 100px from bottom to start fading in
-
+               const elementVisible = 100; 
                if (elementTop < window.innerHeight - elementVisible) {
                    element.classList.add('active');
                } else {
-                   // Optional: remove active class if element scrolls out of view upwards
-                   // element.classList.remove('active');
                }
            });
        }
 
-       // Initial check in case elements are already in view on load
        checkFade();
 
-       // Check on scroll
        window.addEventListener('scroll', checkFade);
    </script>
 </body>
